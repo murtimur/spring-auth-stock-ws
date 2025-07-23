@@ -8,7 +8,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE TABLE [dbo].[MeganetVToken](
+CREATE TABLE [dbo].[app-token](
 	[token] [varchar](255) NOT NULL,
 	[user_id] [int] NULL,
 PRIMARY KEY CLUSTERED 
@@ -18,10 +18,10 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 GO
 
-ALTER TABLE [dbo].[MeganetV2Token]  WITH CHECK ADD  CONSTRAINT [FK7reoxq4h821llj6ayujkenb8x] FOREIGN KEY([user_id])
-REFERENCES [dbo].[MeganetV2AppUsers] ([id])
+ALTER TABLE [dbo].[app-token]  WITH CHECK ADD  CONSTRAINT [FK7reoxq4h821llj6ayujkenb8x] FOREIGN KEY([user_id])
+REFERENCES [dbo].[app-users] ([id])
 GO
 
-ALTER TABLE [dbo].[MeganetV2Token] CHECK CONSTRAINT [FK7reoxq4h821llj6ayujkenb8x]
+ALTER TABLE [dbo].[app-token] CHECK CONSTRAINT [FK7reoxq4h821llj6ayujkenb8x]
 GO
 
