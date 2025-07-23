@@ -8,7 +8,7 @@ import java.util.List;
 import com.muratyildirim.app.auth.token.Token;
 
 @Entity
-@Table(name = "MeganetVAppUsers")
+@Table(name = "app-users")
 public class User {
 
 	@Id
@@ -116,8 +116,7 @@ public class User {
 	private String renkBeden;
 
 	private boolean sayimEnvanterGorur;
-
-	//burada ki user Token icinde ki join column user ile ayni olacak
+	
 	@OneToMany(mappedBy = "user", cascade = CascadeType.REMOVE)
 	private List<Token> tokens;
 
