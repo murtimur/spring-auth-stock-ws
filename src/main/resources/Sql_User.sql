@@ -1,14 +1,14 @@
 USE [DB_1]
 GO
 
-/****** Object:  Table [dbo].[MeganetV2.1AppUsers]    Script Date: 01/07/2025 14:29:44 ******/
+/****** Object:  Table [dbo].[app-users]    Script Date: 01/07/2025 14:29:44 ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE TABLE [dbo].[MeganetVAppUsers](
+CREATE TABLE [dbo].[app-users](
     [id] [int] IDENTITY(1,1) NOT NULL,
     [alan1] [varchar](255) NULL,
     [alan10] [varchar](255) NULL,
