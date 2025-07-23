@@ -60,7 +60,6 @@ CREATE TABLE [dbo].[MeganetVAppUsers](
     [varsayilanPersonelKodu] [varchar](255) NULL,
     [verilenFiyatTeklifi] [bit] NOT NULL,
     [verilenSiparis] [bit] NOT NULL,
-    [winkaKullaniciId] [varchar](255) NULL,
     [yaziciAdi] [varchar](255) NULL,
     PRIMARY KEY CLUSTERED
 (
