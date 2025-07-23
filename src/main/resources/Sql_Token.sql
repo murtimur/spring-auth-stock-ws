@@ -1,4 +1,4 @@
-USE [CodeDB_1]
+USE [DB_1]
 GO
 
 /****** Object:  Table [dbo].[MeganetV2Token]    Script Date: 18/06/2025 10:40:01 ******/
